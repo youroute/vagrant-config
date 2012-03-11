@@ -1,0 +1,3 @@
+[submodule "chef"]
+	path = chef
+	url = git@github.com:youroute/youroute-chef-repo.git
