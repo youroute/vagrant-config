@@ -9,6 +9,6 @@ REQUIREMENTS
 INSTALLATION
 ============
 
-  1. `git clone --recursive git@github.com:youroute/vagrant-config.git`
-  2. `bundle install`
-  3. `cd chef/ && librarian-chef install --verbose`
+  1. `git clone --recursive git@github.com:youroute/vagrant-config.git vagrant-config`
+  2. `cd vagrant-config`
+  3. `./install.sh`
