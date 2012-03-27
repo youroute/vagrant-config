@@ -9,6 +9,4 @@ REQUIREMENTS
 INSTALLATION
 ============
 
-  1. `git clone --recursive git@github.com:youroute/vagrant-config.git vagrant-config`
-  2. `cd vagrant-config`
-  3. `./install.sh`
+  1. `curl https://raw.github.com/youroute/vagrant-config/master/install.sh | sh`
