@@ -6,4 +6,5 @@ bundle install
 echo "Installing cookbooks with librarian"
 cd chef
 librarian-chef install --verbose ./chef
+git submodule update
 cd ..
