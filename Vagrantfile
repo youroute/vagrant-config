@@ -21,6 +21,11 @@ Vagrant::Config.run do |config|
   # via the IP.
   config.vm.network :hostonly, "192.168.50.4"
 
+  # Config DNS in MacOSX
+  config.dns.tld = "dev"
+  config.vm.host_name = "youroute"
+  config.dns.patterns = [ /^.*youroute.dev$/ ]
+
   # Forward a port from the guest to the host, which allows for outside
   # computers to access the VM, whereas host only networking does not.
   # config.vm.forward_port 80, 81
@@ -101,3 +106,5 @@ Vagrant::Config.run do |config|
   #
   #   chef.validation_client_name = "ORGNAME-validator"
 end
+
+VagrantDNS::Config.logger = Logger.new("logs/dns.log")
