@@ -17,5 +17,5 @@ echo "Creating logs directory"
 mkdir logs
 touch logs/dns.log
 chmod 775 logs/dns.log
-echo "Starting vagrant dns"
-vagrant dns --start
+# echo "Starting vagrant dns"
+# vagrant dns --start
