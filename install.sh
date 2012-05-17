@@ -7,9 +7,10 @@ echo "Installing cookbooks with librarian"
 cd chef
 librarian-chef install --verbose ./chef
 git submodule update
-cd ..
+cd ../..
 echo "Installing vagrant-dns gem"
 vagrant gem install vagrant-dns
+cd vagrant-config
 echo "Creating logs directory"
 mkdir logs
 touch logs/dns.log
