@@ -12,7 +12,10 @@ echo "Installing vagrant-dns gem"
 vagrant gem install vagrant-dns
 cd vagrant-config
 echo "Creating logs directory"
-mkdir logs
+if [ ! -d logs ]
+then
+  mkdir logs
+fi
 touch logs/dns.log
 chmod 775 logs/dns.log
 echo "SUDO: Installing dns resolvers. Please, enter sudo password if required"
