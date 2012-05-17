@@ -8,6 +8,7 @@ cd chef
 librarian-chef install --verbose ./chef
 git submodule update
 cd ..
+echo "Installing vagrant-dns gem"
 vagrant gem install vagrant-dns
 echo "Creating logs directory"
 mkdir logs
