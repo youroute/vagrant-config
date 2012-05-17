@@ -19,5 +19,7 @@ echo "SUDO: Installing dns resolvers. Please, enter sudo password if required"
 sudo vagrant dns --install
 echo "SUDO: Changing chmod at ~/.vagrant.d/tmp/dns"
 sudo chmod -R 775 ~/.vagrant.d/tmp/dns
+echo "Creating sources directory"
+mkdir ../sources
 # echo "Starting vagrant dns"
 # vagrant dns --start
