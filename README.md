@@ -5,6 +5,8 @@ REQUIREMENTS
   * bundler
   * ruby-1.8.7 >=
   * rbenv (recommended)
+  * git
+  * XCode (for building native extensions of gems)
 
 INSTALLATION
 ============
