@@ -5,7 +5,7 @@ echo "Installing required gems"
 bundle install
 echo "Installing cookbooks with librarian"
 cd chef
-librarian-chef install --verbose ./chef
+librarian-chef install --verbose
 git submodule update
 cd ../..
 echo "Installing vagrant-dns gem"
