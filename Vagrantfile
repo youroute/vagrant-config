@@ -38,10 +38,10 @@ Vagrant::Config.run do |config|
   config.vm.share_folder "ssh-keys", "/tmp/ssh-keys", "~/.ssh"
 
   # Virtual machine configuration
-  # config.vm.customize do |vm|
-  #   vm.name = "VirtualMachine"
-  #   vm.memory_size = 384
-  # end
+  config.vm.customize do |vm|
+    vm.name = "youroute-machine"
+    vm.memory_size = 1024
+  end
 
   # Enable provisioning with Puppet stand alone.  Puppet manifests
   # are contained in a directory path relative to this Vagrantfile.
