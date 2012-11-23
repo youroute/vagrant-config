@@ -3,11 +3,8 @@ git clone --recursive git://github.com/youroute/vagrant-config.git vagrant-confi
 cd vagrant-config
 echo "Installing required gems"
 bundle install
-if [ -f /opt/local/bin/rbenv ]
-then
-  echo "Rehash gems for rbenv"
-  rbenv rehash
-fi
+echo "Rehash gems for rbenv"
+rbenv rehash # TODO: wrap rbenv command in condition "rbenv found or not"
 echo "Installing cookbooks with librarian"
 cd chef
 librarian-chef install --verbose
