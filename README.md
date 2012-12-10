@@ -12,3 +12,8 @@ INSTALLATION
 ============
 
   1. `curl https://raw.github.com/youroute/vagrant-config/master/install.sh | sh`
+
+HOW TO UPDATE
+=============
+
+  1. run `./update.sh`
