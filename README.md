@@ -6,7 +6,7 @@ REQUIREMENTS
   * ruby-1.9.3 >= (may be it works on 1.8.7, who knows)
   * rbenv (recommended)
   * git
-  * XCode Command Line Tools (for building native extensions of gems)
+  * XCode Command Line Tools (for building native extensions of gems) (http://devimages.apple.com/downloads/xcode/command_line_tools_for_xcode_10_8_late_july_2012.dmg)
 
 INSTALLATION
 ============
