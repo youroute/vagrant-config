@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
 
-gem 'chef'
-gem 'knife-solo'
-gem 'librarian'
+gem 'chef', '>= 11.0.0'
+gem 'librarian-chef'
+gem 'knife-ec2'
